@@ -41,7 +41,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-show-more" href="#">Хочу сюда</a>
+            <a class="buttom navigation-link-show-more " href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>
@@ -106,20 +106,25 @@
         <section class="hotel-search">
           <h2 class="hotel-search-header">Заинтересовались?</h2>
             <p class="hotel-search-description">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <a class="hotel-search-link" href="#">Поиск гостиницы в Седоне</a>
+            <a class="buttom hotel-search-link" href="#">Поиск гостиницы в Седоне</a>
         </section>
         <section class="subscribe">
           <h2>Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!
-          <form  action="#" method="post" >
-            <label for="email">
-              <input type="text" name="e-mail" placeholder="Ваш e-mail">
-            </label>
-            <input type="submit" value="Подписаться">
-          </form>
-        </section>
+
     </main>
     <footer class="footer">
+      <section class="subscribe">
+      <form  action="https://echo.htmlacademy.ru/" method="post"  name="email">
+        <p class="subscribe-form-text">
+        <label for="email">
+          <input type="email" id="e-mail" placeholder="Ваш e-mail">
+        </label>
+        <input type="submit" value="Подписаться">
+        </p>
+      </form>
+      </section>
+      <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <ul class="footer-social-list">
           <li class="footer-social-icon">
@@ -144,9 +149,12 @@
           </li>
       </ul>
     <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    <p class="about-text">
     <a class="htmlacademy-link" href="https://htmlacademy.ru/">
       <img class="social-logo" alt="Логотип htmlacademy" src="#">
     </a>
+  </p>
+  </section>
     </footer>
   </body>
 </html>
