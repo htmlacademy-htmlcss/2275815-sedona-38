@@ -135,7 +135,7 @@ body {
   background-image: url("../images/Subscribe.jpg");
   background-repeat: no-repeat;
   background-position:center;
-  background-size: 100% auto;
+  background-size: cover;
   color:#FFF;
 }
 
