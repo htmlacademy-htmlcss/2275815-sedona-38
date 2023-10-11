@@ -122,15 +122,6 @@ body {
 
 }
 
-.subscribe-inner {
-  background-image: url("../images/Subscribe.jpg");
-  background-repeat: no-repeat;
-  background-position:center;
-  background-size: 100% auto;
-  color:#FFF;
-
-}
-
 .subscribe-chapter {
   font-size: 30px;
   font-style: normal;
@@ -139,6 +130,24 @@ body {
   text-transform: uppercase;
   color: #000;
 }
+
+.subscribe-index {
+  background-image: url("../images/Subscribe.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: 100% auto;
+  color:#FFF;
+}
+
+.subscribe-chapter-index {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+
 
 .input {
   font-family: inherit;
