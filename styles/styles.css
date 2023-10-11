@@ -117,15 +117,19 @@ body {
 
 
 .subscribe {
+  color: #333;
+  text-align: center;
+
+}
+
+.subscribe-inner {
   background-image: url("../images/Subscribe.jpg");
   background-repeat: no-repeat;
   background-position:center;
-  color:#FFF;
-  text-align: center;
   background-size: 100% auto;
+  color:#FFF;
+
 }
-
-
 
 .subscribe-chapter {
   font-size: 30px;
