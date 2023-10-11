@@ -45,6 +45,7 @@ body {
   background-repeat: no-repeat;
   background-position: bottom, center;
   text-align: center;
+  background-color: #82B3D3;
 }
 
 .description-title {
@@ -137,6 +138,7 @@ body {
   background-position:center;
   background-size: cover;
   color:#FFF;
+  background-color: #82B3D3;
 }
 
 .subscribe-chapter-index {
