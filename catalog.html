@@ -6,48 +6,46 @@
     <link rel="stylesheet" href="/styles/styles.css">
   </head>
   <body>
+    <div class="page-container">
     <header class="page-header">
-      <div class="page-header-contain">
+      <nav class="navigation">
         <a class="page-header-logo">
           <img class="page-header-logo-img" alt="Логотип City of Sedona" src="/images/logo-sedona.svg" width="140" height="70">
         </a>
-      </div>
-      <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="./index.html#Sedona">О Седоне</a>
+            <a class="navigation-link" href="#Sedona">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-      </nav>
-      <nav class="navigation navigation-user">
-        <ul class="navigation-list">
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-            <span class="visually-hidden">
-              Поиск
+            <span class="visually-hidde"><!--дописать n-->
+                Поиск
             </span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">
+              <span class="visually-hidde"><!--дописать n-->
                 Нравится
               </span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="button navigation-link-show-more" href="#">Хочу сюда</a>
+            <a class="button navigation-link-show-more " href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+
+
       <header class="inner-header">
         <h1>Гостиницы Седоны</h1>
         <uL class="breadcrumbs">
@@ -112,32 +110,38 @@
       </form>
        </section>
       </header>
+
+      <main class="main-container main-inner">
+
         <section class="hotel-catalog">
-          <h2 class="visually-hidden">Каталог гостиниц</h2>
-          <span class="hotel-catalog-title">Найдено гостиниц:38</span>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="popular">Сначала популярные</option>
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
+          <div class="search-hotel">
+            <h2 class="visually-hidden">Каталог гостиниц</h2>
+            <span class="hotel-catalog-title">Найдено гостиниц:38</span>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="popular">Сначала популярные</option>
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
             <ul class="view-list">
               <li>
                 <a href="#" class="view-list-link">
-                  <span class="visually-hidden"><img src="#" alt="">Показать список</span>
+                  <span class="visually-hidde"><img src="#" alt="">Показать список</span> <!--дописать n-->
                 </a>
               </li>
               <li>
                 <a href="#" class="view-list-link">
-                  <span class="visually-hidden"><img src="#" alt="">Показать слайдшоу</span>
+                  <span class="visually-hidde"><img src="#" alt="">Показать слайдшоу</span> <!--дописать n-->
                 </a>
               </li>
               <li>
                 <a href="#" class="view-list-link">
-                  <span class="visually-hidden"><img src="#" alt="">Показать карточки</span>
+                  <span class="visually-hidde"><img src="#" alt="">Показать карточки</span> <!--дописать n-->
                 </a>
               </li>
             </ul>
-            <ul class="hotel-list">
+          </div>
+          <div class="hotel-view-card">
+          <ul class="hotel-list">
               <li class="product-card">
                 <a class="product-card-link" href="#" tabindex="-1">
                   <img class="product-card-image" src="./images/hotel/hotel-1.jpg" alt="photo Amara Resort & Spa">
@@ -223,8 +227,10 @@
                 <p class="rating-text">Рейтинг: 5,0</p>
               </li>
             </ul>
-          </section>
-          <section class="hotel-pagination">
+          </div>
+        </section>
+
+        <section class="hotel-pagination">
             <h2 class="visually-hidden">Пагинация</h2>
             <ol class="pagination">
               <li class="pagination-item">
@@ -247,11 +253,13 @@
               </li>
             </ol>
           </section>
-        </main>
+
+    </main>
+
     <footer class="footer">
-      <section class="subscribe subscribe-inner">
+      <section class="subscribe">
         <div class="subscribe-form">
-        <h2 class="vissualy-hidden">Подписка</h2>
+        <h2 class="visually-hidden">Подписка</h2>
         <p class="subscribe-chapter">Подпишитесь на рассылку</p>
         <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form  action="https://echo.htmlacademy.ru/" method="post"  name="email">
@@ -307,7 +315,8 @@
         </svg>
     </a>
   </p>
-  </section>
+      </section>
     </footer>
+    </div>
   </body>
 </html>
