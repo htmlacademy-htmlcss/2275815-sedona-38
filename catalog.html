@@ -23,17 +23,17 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-            <span class="visually-hidde"><!--дописать n-->
+            <span class="visually-hidden">
                 Поиск
             </span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidde"><!--дописать n-->
+              <span class="visually-hidden">
                 Нравится
               </span>
             </a>
@@ -43,13 +43,10 @@
           </li>
         </ul>
       </nav>
-    </header>
-
-
-      <header class="inner-header">
+      <div class="inner-header">
         <h1>Гостиницы Седоны</h1>
         <uL class="breadcrumbs">
-          <li class="breadcrumbs-item">
+          <li class="breadcrumbs-item ">
             <a class="breadcrumbs-link" href="index.html">
               <span class="visually-hidden">
                 На главную
@@ -109,10 +106,9 @@
           </div>
       </form>
        </section>
-      </header>
-
-      <main class="main-container main-inner">
-
+      </div>
+    </header>
+      <main class="main-container">
         <section class="hotel-catalog">
           <div class="search-hotel">
             <h2 class="visually-hidden">Каталог гостиниц</h2>
@@ -123,25 +119,23 @@
               <option value="expensive">Сначала дорогие</option>
             </select>
             <ul class="view-list">
-              <li>
+              <li class="view-list-icon">
                 <a href="#" class="view-list-link">
-                  <span class="visually-hidde"><img src="#" alt="">Показать список</span> <!--дописать n-->
+                  <span class="visually-hidden"><img src="#" alt="">Показать список</span>
                 </a>
               </li>
-              <li>
+              <li class="view-list-icon">
                 <a href="#" class="view-list-link">
-                  <span class="visually-hidde"><img src="#" alt="">Показать слайдшоу</span> <!--дописать n-->
+                  <span class="visually-hidden"><img src="#" alt="">Показать слайдшоу</span>
                 </a>
               </li>
-              <li>
+              <li class="view-list-icon">
                 <a href="#" class="view-list-link">
-                  <span class="visually-hidde"><img src="#" alt="">Показать карточки</span> <!--дописать n-->
-                </a>
+                  <span class="visually-hidden"><img src="#" alt="">Показать карточки</span>
               </li>
             </ul>
           </div>
-          <div class="hotel-view-card">
-          <ul class="hotel-list">
+           <ul class="hotel-list">
               <li class="product-card">
                 <a class="product-card-link" href="#" tabindex="-1">
                   <img class="product-card-image" src="./images/hotel/hotel-1.jpg" alt="photo Amara Resort & Spa">
@@ -160,10 +154,11 @@
                   <li class="active"><span>4</span></li>
                   <li><span>5</span></li>
                 </ul>
+
                 <!--в ретро был показан вариант
                 <p class="stars stars-3">
                   <span class="visually-hidden">Трехзвездочный отель<span>
-                </p>-->
+                </p> -->
                 <p class="rating-text"> Рейтинг: 8,5</p>
               </li>
               <li class="product-card">
@@ -227,7 +222,7 @@
                 <p class="rating-text">Рейтинг: 5,0</p>
               </li>
             </ul>
-          </div>
+
         </section>
 
         <section class="hotel-pagination">
