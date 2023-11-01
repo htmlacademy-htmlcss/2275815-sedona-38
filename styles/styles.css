@@ -130,12 +130,12 @@ body {
 }
 
 .description {
-  margin-top: 70px;
+
   margin-bottom: 70px;
 }
 
 .second-advantages {
-  margin-top: 64px;
+
   margin-bottom: 64px;
 }
 
@@ -152,7 +152,6 @@ body {
 
 .description-text {
   display: block;
-  margin-top: 25px;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -162,12 +161,10 @@ body {
 }
 
 .second-advantages-title {
-  margin-top: 0;
   margin-bottom: 20px;
 }
 
 .hotel-search-description-text {
-  margin-top: 20px;
   margin-bottom: 54px;
 }
 
@@ -268,7 +265,6 @@ body {
   align-items: center;
 }
 .subscribe-chapter {
-  margin-top: 0;
   margin-bottom: 20px;
   font-size: 30px;
   font-style: normal;
@@ -288,7 +284,6 @@ body {
 }
 
 .subscribe-chapter-index {
-  margin-top: 0;
   margin-bottom: 20px;
   font-size: 30px;
   font-style: normal;
@@ -315,7 +310,6 @@ body {
 }
 
 .subscribe-text {
-  margin-top: 20px;
   margin-bottom: 54px;
   font-size: 22px;
   font-style: normal;
@@ -419,7 +413,7 @@ body {
 .hotel-catalog {
   display: flex;
   font-family: inherit;
-  margin-top: 20px;
+
 }
 
 .page-header {
@@ -463,7 +457,6 @@ body {
   list-style-type: none;
   margin: 0;
   margin-bottom: 40px;
-  margin-top: 40px;
   padding: 0;
 }
 
@@ -590,9 +583,7 @@ body {
 
 /*Пагинация*/
 
-.hotel-pagination {
-  margin-top: 40px;
-}
+
 
 .pagination {
   display: flex;
