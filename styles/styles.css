@@ -328,6 +328,8 @@ body {
   font-family: inherit;
 }
 
+
+/*Кноки */
 .button {
   display: flex;
   white-space: nowrap;
@@ -347,7 +349,35 @@ body {
   background-color: #756157;
   text-decoration: none;
   border-radius: 4px;
+  box-sizing: content-box;
 }
+
+.link-card {
+  box-sizing: content-box;
+  width: 50px;
+}
+
+.product-card-fav {
+  display: flex;
+  width: 50px;
+  height: 20px;
+  padding: 8px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #82B3D3;
+  text-decoration: none;
+  border-radius: 4px;
+  box-sizing: content-box;
+  border:none;
+}
+
 
 .hotel-search {
   display: flex;
@@ -420,29 +450,82 @@ body {
   display: flex;
   flex-direction: column;
   width: 1200px;
-  padding: 50px 70px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
+
+
+
 
 .hotel-list {
   display: flex;
-  margin: 20px;
-  padding: 20px;
   flex-wrap: wrap;
   list-style-type: none;
+  margin: 0;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  padding: 0;
 }
 
+
+.product-card {
+  display: grid;
+  background-color: #ffffff;
+  padding: 19px;
+  width: 300px;
+  margin: 20px;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: 212px;
+  grid-column-gap: 16px;
+  grid-row-gap: 20px;
+  align-items: flex-start;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  align-items: center;
+}
+
+.product-card:nth-child(3n) {
+  margin-right: 0;
+}
+
+
 .product-card-image {
-  display: flex;
+
   width: 300px;
   height: 212px;
 }
 
-.product-card {
-  align-items: flex-start;
-  border-radius: 4px;
-  border: 1px solid #e6e6e6;
-  flex-wrap: wrap;
+.product-card-link {
+  grid-column-start:1 ;
+  grid-column-end: -1;
 }
+
+.product-card-link-hotel {
+  grid-column-start:1 ;
+  grid-column-end: -1;
+  height: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+
+.product-card-title {
+
+  line-height: 24px;
+  font-weight: 700;
+  color: inherit;
+  text-align: left;
+  text-decoration: none;
+}
+
+.product-card-price {
+  text-align: right;
+}
+
+
+
 
 /*Хлебные крошки*/
 .main-chapter {
@@ -460,7 +543,7 @@ body {
   width: 150px;
   height: 21px;
 }
-. .breadcrumbs-link {
+.breadcrumbs-link {
   display: flex;
   width: 21px;
   height: 21px;
@@ -551,4 +634,10 @@ body {
   color: #000;
   text-align: center;
   text-transform: uppercase;
+}
+
+
+.search-hotel {
+  display: grid;
+
 }
