@@ -541,7 +541,22 @@ body {
   box-sizing: content-box;
 }
 
+
+.button:hover, .hotel-search-link:hover {
+  background-color:#615048 ;
+}
+
+.button:focus, .hotel-search-link:focus {
+  background-color:#615048 ;
+}
+
+.button:active, .hotel-search-link:active {
+  background-color: #756157;
+  opacity: 30%;
+}
+
 .product-card-fav {
+  /*можно убрать половину значений?*/
   display: flex;
   margin: 0;
   padding: 8px, 50px, 8px, 50px;
@@ -563,10 +578,35 @@ body {
   font-family: inherit;
 }
 
+.button-subscribe:hover, .button-apply:hover, .product-card-fav:hover {
+  background-color: #68A2CA;
+}
+
+.button-subscribe:focus, .button-apply:focus, .product-card-fav:focus {
+  background-color: #68A2CA;
+}
+
+.button-subscribe:active, .button-apply:hover:active, .product-card-fav:active  {
+  background-color: #82B3D3 ;
+  opacity: 30%;
+}
+
 .active-fav {
   background-color:#7DB54F ;
 }
 
+.active-fav:hover  {
+  background-color: #6C9E42;
+}
+
+.active:focus {
+  background-color: #6C9E42;
+}
+
+.active-fav:active {
+  background-color:#7DB54F ;
+  opacity: 30%;
+}
 
 .button-subscribe {
   display: flex;
@@ -632,6 +672,26 @@ body {
   box-sizing: content-box;
   font-family: inherit;
 }
+
+.button-reset:hover  {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 60%;
+}
+
+.button-reset:focus {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0);
+  border: 3px solid #83B3D3;
+}
+
+.button-reset:active {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 60%;
+  border: none;
+}
+
 
 .subscribe-form-text {
   display: flex;
