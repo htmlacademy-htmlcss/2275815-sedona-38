@@ -70,15 +70,19 @@ body {
 .navigation {
   display: flex;
   width: 1050px;
-  height: 65px;
+  height: 63px;
   margin: 0 70px;
   align-items: center;
-
 }
+
+
+
+
 .page-header-logo {
   display: flex;
   align-items: center;
   width: 140px;
+  min-height: 70px;
   position: relative;
   z-index: 3;
 
@@ -97,12 +101,31 @@ body {
   list-style-type: none;
   margin: 0;
   margin-right: auto;
+  position: relative;
+  z-index: 3;
+}
+
+
+
+
+
+
+.selected {
+  border-bottom: 2px solid #756257;
+  width: 68px;
+  justify-content: center;
 
 }
+
 
 .navigation-list:last-child {
   margin-left: 0;
+
+
 }
+
+
+
 
 .navigation-user {
   display: flex;
@@ -110,7 +133,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  min-height: 65px;
+  min-height: 64px;
   min-width: 250px;
   align-content: center;
   align-items: center;
@@ -124,6 +147,7 @@ body {
   display: flex;
   margin: 0;
   padding: 22px 12px;
+  height: 24px;
   line-height: 24px;
   font-weight: 700;
   color: inherit;
@@ -134,6 +158,7 @@ body {
 
 .navigation-item {
   list-style: none;
+
 }
 
 
@@ -167,10 +192,10 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  left: 30px;
+  left: 29px;
   right: auto;
   top:auto;
-  bottom: 20px;
+  bottom: 29px;
 }
 
 
@@ -228,6 +253,7 @@ body {
 
 .description-title {
   display: block;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 25px;
   font-size: 30px;
@@ -236,6 +262,33 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.retange::after {
+  display: block;
+  content: "";
+  background-image: url(../images/Rectangle\ 125.svg);
+  box-sizing: 60px 2px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 230px;
+  height: 2px;
+  margin: 0;
+  margin-top: 30px;
+
+}
+
+.retange-light::after {
+  display: block;
+  content: "";
+  background-image: url(../images/Rectangle-light.svg);
+  box-sizing: 60px 2px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 230px;
+  height: 2px;
+  margin: 0;
+  margin-top: 30px;
 }
 
 .description-text {
@@ -247,6 +300,46 @@ body {
   text-align: center;
   color: #333333;
   margin: 0;
+}
+
+
+.advantages-title.house::before{
+  display: block;
+  content: "";
+  background-image: url(../images/Advantage-icon.svg);
+  box-sizing: 75px 72px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 75px;
+  height: 72px;
+  margin-bottom: 30px;
+}
+
+
+.advantages-title.food::before{
+  display: block;
+  content: "";
+  background-image: url(../images/Advantage-icon-food.svg);
+  box-sizing: 75px 72px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 75px;
+  height: 72px;
+  margin-bottom: 30px;
+}
+
+.advantages-title.present::before{
+  display: block;
+  align-items: center;
+  content: "";
+  background-image: url(../images/present.svg);
+  box-sizing: 75px 72px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 75px;
+  height: 72px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .second-advantages-title {
@@ -278,14 +371,15 @@ body {
 .advantages-item {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 230px;
-  height: 179px;
+  min-height: 179px;
   flex-wrap: wrap;
-  padding: 103px 85px;
+  padding: 80px 85px;
   margin: 0;
 }
 
-.advantages-item-enother-color {
+.enother-color {
   background-color: #82b3d3;
   color: #ffffff;
 }
@@ -297,8 +391,7 @@ body {
 }
 
 .advantages-title {
-  display: flex;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -308,13 +401,18 @@ body {
 }
 
 .advantages-text {
-  margin: 30px auto 0;
+  margin:0;
   align-content: center;
   font-family: PT Sans;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
+
+}
+
+.advantages-text-second {
+  margin-top: 30px;
 }
 
 .light-color {
@@ -618,6 +716,7 @@ body {
 
 .page-header {
   display: flex;
+  min-height: 65px;
   flex-direction: column;
   background-color: #fff;
 
@@ -975,7 +1074,6 @@ body {
 }
 
 /*Лого*/
-
 
 
 .htmlacademy-link:hover svg path {
