@@ -80,65 +80,64 @@
 
 
           <ul class="advantages-list">
-            <li class="advantages-item enother-color">
-              <h3 class="advantages-title retange-light">Настойщий городок</h3>
-              <p class="advantages-text">
-                Седона — не аттракцион для туристов, там течёт своя жизнь
-              </p>
-            </li>
-            <li class="advantages-item-img">
-              <img
-                class="advantages-image"
-                src="/images/photo-1.jpg"
-                alt="Небольшой домик"
-                width="800"
-                height="385"
-              />
-            </li>
+            <li class="advantages-item  advantages-item-wide enother-color">
+
+                <div class="advantages-item-conteiner">
+                <h3 class="advantages-title retange-light">Там есть мост дьявола</h3>
+                <p class="advantages-text">
+                  Да, по нему можно пройти! Если вы осмелитесь, разумеется
+                </p>
+                </div>
+                <img
+                 class="advantages-image"
+                  src="/images/photo-1.jpg"
+                  alt="Горы"
+                  width="800"
+                  height="384"
+                >
+              </li>
             <li class="advantages-item light-color">
+              <div class="advantages-item-conteiner">
               <h3 class="advantages-title retange">Небольшая площадь</h3>
-              <p class="advantages-text">
+              <p class="advantages-text ">
                 Все достопримечательности находятся очень близко
               </p>
+              </div>
             </li>
             <li class="advantages-item medium-color">
+              <div class="advantages-item-conteiner">
               <h3 class="advantages-title retange">Красивая <br>дорога</h3>
               <p class="advantages-text">
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
+              </div>
             </li>
             <li class="advantages-item light-color">
+              <div class="advantages-item-conteiner">
               <h3 class="advantages-title retange">Мало <br>туристов</h3>
               <p class="advantages-text">
                 Большинство едет в Гранд Каньон и толпится там
               </p>
-            </li>
-            <li class="advantages-item-img">
-              <img
+            </div>
+             </li>
+            <li class="advantages-item  advantages-item-wide enother-color">
+            <img
                class="advantages-image"
                 src="/images/photo-2.jpg"
                 alt="Горы"
                 width="800"
-                height="385"
-              />
-            </li>
-            <li
-              class="advantages-item enother-color"
-            >
+                height="384"
+              >
+              <div class="advantages-item-conteiner">
               <h3 class="advantages-title retange-light">Там есть мост дьявола</h3>
               <p class="advantages-text">
                 Да, по нему можно пройти! Если вы осмелитесь, разумеется
               </p>
+              </div>
             </li>
           </ul>
-        </section>
 
-
-
-
-
-
-        <section class="second-advantages">
+        <div class="second-advantages">
           <h2 class="visually-hidden">Почему стоит приехать</h2>
           <p class="description-title second-advantages-title">
             Приезжайте в Седону отдохнуть<br />
@@ -147,32 +146,41 @@
           <p class="description-text second-advantages-text">
             Опытный персонал и качественное обслуживание!
           </p>
-        </section>
+        </div>
 
-        <section class="advantages-items second">
+
+
+        <div class="advantages-list">
           <h2 class="visually-hidden">Продукция</h2>
           <ul class="advantages-list">
             <li class="advantages-item medium-color">
-              <h3 class="advantages-title house">Жилье</h3>
-              <p class="advantages-text-second">
-                Рекомендуем пожить в настоящем мотеле, всё как в кино!
-              </p>
+              <div class="advantages-item-conteiner">
+                <h3 class="advantages-title house">Жилье</h3>
+                <p class="advantages-text-second">
+                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                </p>
+              </div>
             </li>
             <li class="advantages-item">
+              <div class="advantages-item-conteiner">
               <h3 class="advantages-title food">Еда</h3>
               <p class="advantages-text-second">
                 Всегда заказывайтеттоповый фирменный бургер, вы не
                 разочаруетесь!
               </p>
+              </div>
             </li>
             <li class="advantages-item medium-color">
+              <div class="advantages-item-conteiner">
               <h3 class="advantages-title present">Сувениры</h3>
               <p class="advantages-text-second">
                 Не только китайского,но и настоящего местного производства!
               </p>
+              </div>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
         <section class="hotel-search">
           <h2 class="visually-hidden">Заказ гостиницы</h2>
           <p class="description-title second-advantages-title">
@@ -265,6 +273,99 @@
           </p>
         </section>
       </footer>
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-auth">
+
+            <div class="search">
+              <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+              <button class="modal-close-button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+              <div class="search-filters">
+                <form name="calendar" action="https://echo.htmlacademy.ru/" method="get">
+                  <div class="field-data clearfix">
+                    <label class="font-label" for="arrival-data">Дата заезда:</label>
+                    <div class="field-value-data">
+                      <input type="text" name="arrival-data" id="arrival-data"
+                       tabindex="1"   value="27 апреля 2020">
+                       <span id="data-input-error" class="error">Мы не можем отправить вас в прошлое.</span>
+                    </div>
+                  </div>
+                  <div class="field-data clearfix">
+                    <label class="font-label" for="departure-data">Дата выезда:</label>
+                    <div class="field-value-data">
+
+                      <input type="text" name="departure-data" id="departure-data"  value="1 сентября 2023" tabindex="2">
+                      <span id="data-departute" class="check">На эти даты есть свободные номера. Пока есть.</span>
+                    </div>
+                  </div>
+                  <div class="field-people">
+
+                    <label class="font-label"  for="adults">Взрослые:</label>
+
+                      <div class="people-number people-number-adults">
+                        <button class="btn-minus btn-people-number" type="button">
+                          <span class="icon-minus">
+                            <svg width="14" height="14" viewBox="0 0 14 2"  xmlns="http://www.w3.org/2000/svg">
+                              <path id="Vector" d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                              </svg>
+
+                          </span>
+                        </button>
+                        <input class="number-count" type="number" name="adults-guests" id="adults" value="2">
+                        <button class="btn-plus btn-people-number" type="button">
+                          <span class="icon-plus">
+                            <svg width="14" height="14" viewBox="0 0 14 14"  xmlns="http://www.w3.org/2000/svg">
+                              <path id="Vector" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                              </svg>
+                          </span>
+                        </button>
+                      </div>
+                        <label class="font-label children" for="children">Дети:</label>
+                        <span class="tooltip">
+                          <button class="tooltip-toggle" type="button">
+                            <svg  class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+                              </svg>
+                          </button>
+                          <span class="tooltip-text">
+                            Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                          </span>
+                        </span>
+                          </button>
+                        </span>
+
+                      <div class="children-number">
+
+                        <div class="people-number-children">
+                          <button class="btn-minus btn-people-number" type="button">
+                            <span class="icon-minus">
+                              <svg width="14" height="14" viewBox="0 0 14 2"  xmlns="http://www.w3.org/2000/svg">
+                                <path id="Vector" d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                                </svg>
+                            </span>
+                          </button>
+                          <input class="number-count" type="number" name="children-guests" id="children" value="2">
+                          <button class="btn-plus btn-people-number" type="button">
+                            <span class="icon-plus">
+                              <svg width="14" height="14" viewBox="0 0 14 14"  xmlns="http://www.w3.org/2000/svg">
+                                <path id="Vector" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                                </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+
+                  </div>
+                  <div class="search-hotels-btn">
+                    <button class="search-btn" type="submit">Найти</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            </div>
+
     </div>
   </body>
 </html>
