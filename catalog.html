@@ -133,11 +133,13 @@
                     <li class="lebel">
                     <label class="catalog-filter-label">
                        <input class="range-input" type="number" value="0" name="min-price" placeholder="от">
+                       <span class="box-from-to">от</span>
                     </label>
                   </li>
                   <li class="lebel">
                     <label class="catalog-filter-label">
                        <input class="range-input input-max" type="number" value="9000" name="max-price"  placeholder="до">
+                       <span class="box-from-to">до</span>
                     </label>
                   </li>
                   </ul>
@@ -385,12 +387,12 @@
           <p class="subscribe-text">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
-          <form action="https://echo.htmlacademy.ru/" method="post" name="email">
+          <form action="https://echo.htmlacademy.ru/" method="post" >
             <p class="subscribe-form-text">
               <label for="email">
-                <input class="email-subscribe" type="email" id="email" placeholder="Ваш e-mail" />
+                <input class="email-subscribe" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
               </label>
-              <input class="button-subscribe"s type="submit" value="Подписаться" />
+              <input class="button-subscribe" type="submit" value="Подписаться">
             </p>
           </form>
         </div>

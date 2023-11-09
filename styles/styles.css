@@ -481,6 +481,10 @@ body {
   flex-direction: column;
   height: 48px;
   width: 48px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 
@@ -940,6 +944,7 @@ line-height: 28px;
   list-style-type: none;
   padding: 0;
   margin: 0;
+
 }
 
 .item-catalog:not(:last-child) {
@@ -1030,7 +1035,7 @@ line-height: 28px;
   justify-content: center;
   width: 24px;
   height: 20px;
-  padding: 13px 13px;
+
   box-sizing: content-box;
 }
 
@@ -1188,9 +1193,9 @@ line-height: 28px;
 .range-input {
   width: 143px;
   height: 48px;
-  padding: 0 2px;
+  padding: 12px 20px;
   font: inherit;
-  text-align: center;
+  text-align: left;
   border-radius: 4px 0 0 4px;
   border: 1px solid #F2F2F2;
   background-color: #FFFFFF;
@@ -1199,7 +1204,38 @@ line-height: 28px;
   font-size: inherit;
   line-height: inherit;
   margin: 0;
+
 }
+
+
+.lebel {
+  position: relative;
+
+}
+
+.box-from-to {
+  width: 17px;
+  height: 24px;
+  padding: 0 2px;
+  font: inherit;
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+  opacity: 30%;
+  background-color: #FFFFFF;
+  margin: 0;
+  position: absolute;
+  z-index: 3;
+  left: 106px;
+  top: 12px;
+}
+
+
+
 
 .input-max {
   border-radius: 0 4px 4px 0;
@@ -1221,13 +1257,6 @@ line-height: 28px;
 .range-input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
-
-/*
-.range-input::placeholder {
-  transition: 0.5s;
-  color: #aaa;
-}
-*/
 
 .buttons {
   margin: 50px 70px 0 0;
