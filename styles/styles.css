@@ -99,18 +99,25 @@ body {
   padding-left: 30px;
   list-style-type: none;
   margin: 0;
-
   position: relative;
   z-index: 3;
 
 }
 
-.selected {
+.selected::after {
+  display: flex;
   border-bottom: 2px solid #756257;
-  width: 68px;
-  justify-content: center;
-
+  min-width: 69px;
+  flex-grow: 1;
+  display: flex;
+  content: "";
+  color: #FFFFFF;
+  top: 100%;
+  position: absolute;
+  z-index: 2;
+  left: center;
 }
+
 
 
 .navigation-list:last-child {
@@ -195,20 +202,38 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+  align-items: center;
 }
 
 .view-list {
   display: flex;
 }
 
+.menu-view {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 70px;
+
+}
+
+.memo:not(:last-child) {
+    margin-right: 8px;
+
+}
+
+
 .select-control {
-  margin-right: 70px;
-  width: 292px;
-  padding: 14px 20px;
-  justify-content: space-between;
-  align-items: center;
+  min-width: 292px;
+  padding-left:14px;
   border-radius: 4px;
-  border: 2px solid var(--forms-elements-1, #E5E5E5);
+  font-family: PT Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+
 }
 
 .hero {
@@ -498,6 +523,8 @@ justify-content: center;
   }
 
 .subscribe-chapter {
+  margin: 0;
+  padding: 0;
   margin-bottom: 20px;
   font-size: 30px;
   font-style: normal;
@@ -605,7 +632,7 @@ justify-content: center;
   /*можно убрать половину значений?*/
   display: flex;
   margin: 0;
-  padding: 8px, 50px, 8px, 50px;
+  padding: 0;
   height: 36px;
   justify-content: center;
   align-items: center;
@@ -678,7 +705,7 @@ justify-content: center;
 .button-apply {
   display: flex;
   margin: 0;
-  padding: 8px, 50px, 8px, 50px;
+  padding: 0;
   height: 36px;
   min-width: 191px;
   justify-content: center;
@@ -694,7 +721,7 @@ justify-content: center;
   text-decoration: none;
   border-radius: 4px;
   border:none;
-  box-sizing: content-box;
+  box-sizing: border-box;
   font-family: inherit;
   margin-bottom: 32px;
 }
@@ -764,8 +791,12 @@ box-sizing: border-box;
 }
 
 .link-card {
-  box-sizing: content-box;
-  width: 50px;
+
+  width: 140px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+
 }
 
 .hotel-search {
@@ -821,8 +852,9 @@ box-sizing: border-box;
 .hotel-catalog {
   display: flex;
   flex-direction: column;
-  margin: 50px 70px 40px;
+  padding: 50px 70px 40px;
   font-family: inherit;
+  margin-bottom: 40px;
 }
 
 .number {
@@ -841,7 +873,7 @@ box-sizing: border-box;
   display: flex;
   box-sizing: border-box;
   width: 1200px;
-  height: auto;
+  height: 412px;
   padding: 35px 70px 70px 70px;
   flex-direction: column;
   align-items: flex-start;
@@ -855,27 +887,60 @@ box-sizing: border-box;
 
 .catalog-filter {
   display: flex;
+  width: 1060px;
+
+}
+
+.s-class {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.control-input {
+  margin-right: 16px;
 }
 
 .catalog-filter-title {
   margin-bottom: 32px;
+  font-family: PT Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 120% */
+text-transform: capitalize;
 }
 
 .catalog-filter-group{
   display: flex;
+  min-width: 100px;
   margin: 0;
   padding: 0;
   border: none;
-  margin-right: 70px;
   padding: 0;
+  margin-right: 70px;
+ }
+
+.catalog-filter-group:nth-child(2) {
+  margin-right: auto;
 }
+
+.skz {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+
 
 .hotel-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   list-style-type: none;
   margin: 0;
-  margin-bottom: 40px;
+
   padding: 0;
   gap: 20px;
 }
@@ -883,20 +948,18 @@ box-sizing: border-box;
 .product-card {
   display: grid;
   background-color: #ffffff;
-  padding: 19px;
-  width: 300px;
+  padding: 20px;
   grid-template-columns: 140px 140px;
-  grid-template-rows: 212px;
-  grid-column-gap: 16px;
-  grid-row-gap: 20px;
+  gap: 20px;
+  grid-row-gap: 16px;
   align-items: flex-start;
   border-radius: 4px;
   border: 1px solid #e6e6e6;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .product-card-image {
-
   width: 300px;
   height: 212px;
 }
@@ -904,40 +967,60 @@ box-sizing: border-box;
 .product-card-link {
   grid-column-start:1 ;
   grid-column-end: -1;
+  height: 212px;
 }
 
 .product-card-link-hotel {
   grid-column-start:1 ;
   grid-column-end: -1;
-  height: 16px;
-  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-style: normal;
   font-weight: 700;
-  color: inherit;
-  text-align: center;
+  line-height: 28px;
+  color: #000;
   text-decoration: none;
 }
 
+.product-card-hotel{
+  width: 140px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+
+
+}
+
 .product-card-title {
+  margin: 0;
   font-family: PT Sans;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 28px;
-  line-height: 24px;
+  font-size: 24px;
+  font-style: normal;
   font-weight: 700;
+  line-height: 28px;
+  line-height: 24px;
   color: inherit;
   text-align: left;
   text-decoration: none;
 }
 
+
+
+
 .product-card-price {
   text-align: right;
+  margin: 0;
+  padding: 0;
 }
 
 .main-chapter {
   margin: 0;
   padding: 0;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-family: PT Sans;
   font-size: 60px;
   font-style: normal;
@@ -952,13 +1035,15 @@ line-height: 28px;
 .breadcrumbs {
   display: flex;
   align-items: center;
+
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
   list-style-type: none;
   width: 150px;
-  height: 21px;
+
   position: relative;
+  box-sizing: border-box;
 }
 
 .breadcrumbs-item{
@@ -973,11 +1058,11 @@ line-height: 28px;
   font-weight: 400;
   line-height: 21px;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 14px;
 }
 
 .breadcrumbs-item:nth-child(2) {
-  margin-left: 10px;
+  margin-left: 14px;
 }
 
 .breadcrumbs-item:first-child::after {
@@ -1011,6 +1096,11 @@ line-height: 28px;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  font-family: PT Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 23px;
 
 }
 
@@ -1027,7 +1117,9 @@ line-height: 28px;
   list-style-type: none;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 70px;
+  padding: 0 70px 60px;
+  margin: 0;
+
 }
 
 .pagination-link {
@@ -1086,13 +1178,16 @@ line-height: 28px;
 }
 
 .hotel-catalog-title {
-  display: flex;
+
   font-family: PT Sans;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+
 }
 
 .social-link {
@@ -1127,9 +1222,9 @@ line-height: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 20px;
-  padding: 14px 12px;
+  width: 48px;
+  height: 48px;
+
   background-color: #fff;
 }
 
@@ -1163,15 +1258,17 @@ line-height: 28px;
 
 .rating {
   display: flex;
-  flex-wrap: wrap;
   padding: 0;
   list-style-type: none;
   margin: 0;
   gap:6px;
+  align-items: center;
+
 }
 
 .rating-text {
   display: flex;
+  margin: 0;
   justify-content: center;
   align-items: center;
   width: 140px;
@@ -1216,7 +1313,7 @@ line-height: 28px;
   width: 287px;
   height: 4px;
   margin: 0;
-  margin-bottom: 16px;
+
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 2px;
 }
@@ -1323,6 +1420,7 @@ line-height: 28px;
   align-content: center;
   margin: 0;
   outline:none;
+  margin-bottom: 36px;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1331,8 +1429,10 @@ line-height: 28px;
 }
 
 .buttons {
-  margin: 50px 70px 0 0;
-  padding: 0;
+   margin-top: 56px;
+
+
+  justify-content: end;
 }
 
 
