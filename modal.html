@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <div class="page-container">
+
+      <div class="modal-container modal-container-clos" data-test="modal" >
+        <div class="modal modal-auth">
+
+            <div class="search">
+              <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+              <button class="modal-close-button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+              <div class="search-filters">
+                <form name="calendar" action="https://echo.htmlacademy.ru/" method="get">
+                  <div class="field-data clearfix">
+                    <label class="font-label" for="arrival-data">Дата заезда:</label>
+                    <div class="field-value-data">
+                      <input type="text" name="arrival-data" id="arrival-data"
+                       tabindex="1"   value="27 апреля 2020">
+                       <span id="data-input-error" class="error">Мы не можем отправить вас в прошлое.</span>
+                    </div>
+                  </div>
+                  <div class="field-data clearfix">
+                    <label class="font-label" for="departure-data">Дата выезда:</label>
+                    <div class="field-value-data">
+
+                      <input type="text" name="departure-data" id="departure-data"  value="1 сентября 2023" tabindex="2">
+                      <span id="data-departute" class="check">На эти даты есть свободные номера. Пока есть.</span>
+                    </div>
+                  </div>
+                  <div class="field-people">
+
+                    <label class="font-label"  for="adults">Взрослые:</label>
+
+                      <div class="people-number people-number-adults">
+                        <button class="btn-minus btn-people-number" type="button">
+                          <span class="icon-minus">
+                            <svg width="14" height="14" viewBox="0 0 14 2"  xmlns="http://www.w3.org/2000/svg">
+                              <path id="Vector" d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                              </svg>
+
+                          </span>
+                        </button>
+                        <input class="number-count" type="number" name="adults-guests" id="adults" value="2">
+                        <button class="btn-plus btn-people-number" type="button">
+                          <span class="icon-plus">
+                            <svg width="14" height="14" viewBox="0 0 14 14"  xmlns="http://www.w3.org/2000/svg">
+                              <path id="Vector" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                              </svg>
+                          </span>
+                        </button>
+                      </div>
+                        <label class="font-label children" for="children">Дети:</label>
+                        <span class="tooltip">
+                          <button class="tooltip-toggle" type="button">
+                            <svg  class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+                              </svg>
+                          </button>
+                          <span class="tooltip-text">
+                            Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                          </span>
+                        </span>
+                          </button>
+                        </span>
+
+                      <div class="children-number">
+
+                        <div class="people-number-children">
+                          <button class="btn-minus btn-people-number" type="button">
+                            <span class="icon-minus">
+                              <svg width="14" height="14" viewBox="0 0 14 2"  xmlns="http://www.w3.org/2000/svg">
+                                <path id="Vector" d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                                </svg>
+                            </span>
+                          </button>
+                          <input class="number-count" type="number" name="children-guests" id="children" value="2">
+                          <button class="btn-plus btn-people-number" type="button">
+                            <span class="icon-plus">
+                              <svg width="14" height="14" viewBox="0 0 14 14"  xmlns="http://www.w3.org/2000/svg">
+                                <path id="Vector" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                                </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="search-hotels-btn">
+                    <button class="search-btn" type="submit">Найти</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -56,8 +56,8 @@
         </nav>
       </header>
       <!--Главная часть-->
-      <main class="main-container">
-        <section class="hero">
+      <main class="main-container" data-test="main">
+        <section class="hero" data-test="hero">
           <h1 class="visually-hidden">Седона</h1>
           <div class="Sedona-logo">
             <img
@@ -67,7 +67,7 @@
               height="352">
           </div>
         </section>
-        <section class="description">
+        <section class="description" data-test="advantages">
           <h2 class="visually-hidden">Описание Седоны</h2>
           <p class="description-title" id="Sedona">
             Седона — небольшой городок в Аризоне,<br />заслуживающий большего!
@@ -132,7 +132,7 @@
               </div>
             </li>
           </ul>
-        <div class="second-advantages">
+        <div class="second-advantages" data-test="service">
           <h2 class="visually-hidden">Почему стоит приехать</h2>
           <p class="description-title second-advantages-title">
             Приезжайте в Седону отдохнуть<br />
@@ -172,7 +172,7 @@
           </ul>
         </div>
       </section>
-        <section class="hotel-search">
+        <section class="hotel-search" data-test="search">
           <h2 class="visually-hidden">Заказ гостиницы</h2>
           <p class="description-title second-advantages-title">
             Заинтересовались?
@@ -185,9 +185,9 @@
         </section>
       </main>
       <!--Подвал-->
-      <footer class="footer">
+      <footer class="footer" data-test="footer">
         <!-- <div class="page-footer-container"> нужен ли будет,если выравнила через subscribe-form? -->
-        <section class="subscribe subscribe-index">
+        <section class="subscribe subscribe-index" data-test="subscribe">
           <div class="subscribe-form">
             <!--выравнивание через данный див-->
             <h2 class="visually-hidden">Подписка</h2>
@@ -346,7 +346,7 @@
                 </form>
               </div>
             </div>
-            </div>
+      </div>
     </div>
   </body>
 </html>
