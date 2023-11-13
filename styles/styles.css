@@ -107,7 +107,7 @@ body {
 .selected::after {
   display: flex;
   border-bottom: 2px solid #756257;
-  min-width: 69px;
+  min-width: 72px;
   flex-grow: 1;
   display: flex;
   content: "";
