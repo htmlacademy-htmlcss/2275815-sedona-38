@@ -126,7 +126,7 @@ body {
 
 }
 
-.doop {
+.navigation-container {
   display: flex;
   justify-content: space-between;
   width: 920px;
@@ -888,7 +888,7 @@ width: 452px;
 
 }
 
-.s-class {
+.catalog-filter-group-container {
   margin-left: auto;
   display: flex;
   justify-content: flex-end;
@@ -922,7 +922,7 @@ width: 452px;
   margin-right: auto;
 }
 
-.skz {
+.catalog-filter-title-container {
   display: flex;
   flex-direction: column;
 
